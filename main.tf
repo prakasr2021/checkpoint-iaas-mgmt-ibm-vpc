@@ -247,7 +247,7 @@ resource "ibm_is_instance" "cp_mgmt_vsi" {
   keys = [data.ibm_is_ssh_key.cp_ssh_pub_key.id]
 
   #Custom UserData
-  user_data = file("user_data")
+  #user_data = file("user_data")
 
   //User can configure timeouts
   timeouts {
